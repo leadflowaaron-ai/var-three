@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Call | Variant Media Group</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-flex">
+            <div class="logo"><a href="index.html" class="brand-link"><strong>VARIANT MEDIA GROUP</strong></a></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="vision.html">Our Vision</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Our Work</a>
+                <a href="book-a-call.html" class="nav-cta active">Free Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container" style="padding:100px 0;">
+        <div class="glass-form" data-aos="zoom-in">
+            <h2>Claim Your Strategy Session</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" class="btn-blue" style="width:100%; border:none; cursor:pointer;">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        document.getElementById('contactForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Your request has been sent to Variant Media Group!');
+        };
+    </script>
+</body>
+</html>
